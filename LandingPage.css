@@ -1,0 +1,165 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    width: 100%;
+   min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3VuZ2xhc3N8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: 50% 55%;
+}
+#bottom{
+    display: flex;
+    width: 100%;
+   min-height: 30vh;
+    background-color: pink;
+}
+#b-one{
+   min-height: inherit;
+    width: 25%;
+    background-color: white;
+    padding: 50px;
+
+}
+
+
+#b-two{
+    min-height: inherit;
+    width: 25%;
+   background-image:url('https://wallpapers.com/images/hd/virat-kohli-in-sunglasses-yc8dfpcjssp3s4se.jpg');
+   background-position:bottom;
+   background-size: cover;
+}
+#b-three{
+    min-height: inherit;
+    width: 25%;
+    background-color: red;
+}
+
+#b-three-top{
+    min-height: 20vh;
+    width: 100%;
+    background-color: orangered;
+}
+
+#b-three-bottom{
+   min-height: 20vh;
+    width: 100%;
+  background-image: url('https://media.istockphoto.com/id/1485332934/photo/womens-sunglasses-with-black-frame.webp?b=1&s=170667a&w=0&k=20&c=IdihgNurNMeZj5lZgminO7p_zsb4k3uPclzon20yl3o=');
+  background-position: top;
+  background-size: cover;
+}
+#b-four{
+    min-height: inherit;
+    width: 25%;
+    background-color: #444;
+    color: white;
+    padding: 50px;
+   
+}
+.notifi{
+    margin-top: 20px;
+    display: flex;
+    
+}
+.notifi #photo{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.notifi p{
+    width: 100%;
+}
+
+#heads{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+#text{
+  
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+   color: white;
+}
+
+#text h1{
+    font-weight: 900;
+    font-size: 5vw;
+}
+
+
+
+#b-one p{
+    margin-top: 20px;
+}
+
+#b-three-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@media(max-width: 500px){
+    #heads #text{
+     flex-direction:column;
+     align-items:flex-start;
+    }
+    #text h1{
+        font-size: 12vw;
+    }
+    #heads #text #txtright{
+     flex-direction: column;   
+    
+    }
+    #heads #text #txtright p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+    #b-one{
+        width: 100%;
+    }
+    #b-two{
+        width: 100%;
+    }
+    #b-three{
+        flex-direction: column;
+        width: 100%;
+    }
+    #b-three-top{
+        min-height: 30vh;
+    }
+    #b-four{
+        width: 100%;
+    }
+    #b-two{
+        background-position: 50% 60%;
+    }
+}
